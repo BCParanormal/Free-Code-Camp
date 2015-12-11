@@ -1,0 +1,57 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.navbar {
+	width: 100%;
+	background-color: #bfbfbf;
+}
+
+.navbar-brand {
+	
+}
+
+.navbar-header {
+	
+}
+
+.navbar-wrapper {
+	
+	width: 80%;
+	margin: 0 10%;
+	background-color: #a6a6a6;
+	color: $333333;
+}
+
+.splash-header {
+	height: 600px;
+	background: url("http://images1.fanpop.com/images/image_uploads/graveyard-cemeteries-and-graveyards-953641_1024_768.jpg") no-repeat center center fixed;
+	background-size: cover;
+	margin-top: -5%;
+	padding-top: 5%;
+	
+}
+
+.splash-overlay h2 {
+	margin-top: 10%;
+}
+
+
+
+
+
+
