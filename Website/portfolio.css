@@ -1,4 +1,3 @@
-
 body,
 html {
     width: 100%;
@@ -17,109 +16,184 @@ h6 {
     font-weight: 700;
 }
 
-.topnav {
-    font-size: 16px;
-    border-bottom: 1px outset rgba(192, 192, 192, 0.5);
-    background: rgba(192, 192, 192, 0.9);
-    box-shadow: 0px 1px rgba(0, 0, 0, 0.3);
-}
-.topnav ul.navbar-nav li a {
-background: rgba(28, 28, 28, 0.1);
-color: #000;
-}
-.topnav ul.navbar-nav li a:hover,
-.topnav ul.navbar-nav li a:focus
- {
-background: rgba(255, 255, 255, 0.5);
-color: #000;
+.navbar {
+	width: 100%;
+	background-color: #bfbfbf;
+	
 }
 
-.topnav .navbar-brand {
-  background: rgba(28, 28, 28, 0.0);
-  color: #000;
+
+
+
+
+.navbar-wrapper {
+	
+	width: 80%;
+	margin: 0 10%;
+	background-color: #a6a6a6;
+	color: $333333;
 }
 
-.topnav .navbar-brand:hover,
-.topnav .navbar-brand:focus {
-  background: rgba(255, 255, 255, 0.5);
-  color: #000;
+.splash-header {
+	height: 800px;
+	background: url("http://images1.fanpop.com/images/image_uploads/graveyard-cemeteries-and-graveyards-953641_1024_768.jpg") no-repeat center center fixed;
+	background-size: cover;
+	margin-top: -5%;
+	padding-top: 5%;
+	text-align: center;
+	
+}
+.splash-overlay {
+	height: 800px;
+}
+.splash-overlay h1 {
+	margin-top: 15%;
+	font-size: 4em;
 }
 
-.lead {
-    font-size: 18px;
-    font-weight: 400;
-}
-/*top background*/
-.intro-header {
-    height: 855px;  
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 50px;
-    text-align: center;
-    background: url('https://40.media.tumblr.com/1b916597d3e174399cb7adadddb66ede/tumblr_nt5uk4psl31ud7rr3o1_1280.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: 855px;
-}
-.bg-overlay {
-  background:rgba(0,0,0, 0.3);
-  height: 855px;
+.splash-overlay p{
+	font-size: 2em;
 }
 
-.intro-message {
-    position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
-}
-/*Big header*/
-.intro-message > h1 {
-    margin-top: -50px;
-    text-shadow: 2px 1px 2px #000;
-    font-size: 5em;
-    color: rgba(255, 255, 255, 0.7);
+ul.img-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  
 }
 
-.intro-divider {
-    width: 400px;
-    border-top: 1px solid #f8f8f8;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
-}
-/*small header*/
-.intro-message > h3 {
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
-  color: black;
-}
-
-@media(max-width:767px) {
-    .intro-message {
-        padding-bottom: 15%;
-    }
-
-    .intro-message > h1 {
-        font-size: 3em;
-    }
-
-    ul.intro-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.intro-social-buttons > li:last-child {
-        margin-bottom: 0;
-    }
-
-    .intro-divider {
-        width: 100%;
-    }
-}
-/*line*/
-hr.intro-divider {
-  border: 1px outset rgba(255, 255, 255, 0.2);
-  box-shadow: 1px 1px 1px rgba(0,0,0,0.6);
-  width: 100%;
-}
-/* social buttons */
-.btn {
+ul.img-list li {
   display: inline-block;
+  height: 100px;
+  margin: 0 1em 1em 0;
+  position: relative;
+  width: 100px;
+}
+
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 100px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100px;
+  opacity: 0;
+  border-radius: 50%;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+ul.img-list li:hover span.text-content {
+  opacity: 1;
+}
+
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+.main-content-wrapper{
+	height: 800px;
+	width: 100%;
+	margin-top: -5%;
+	background: url("http://images.alphacoders.com/266/266721.jpg") no-repeat center center fixed;
+	background-size: cover;
+	text-align: center;
+}
+
+.main.content {
+	height: 800px;
+	width: 100%;
+}
+
+.main-content img {
+	margin: 0 auto;
+	border-radius: 50%;
+}
+
+.main-content h1 {
+	padding-top: 6%;
+	font-size: 3em;
+	color: #f2f2f2
+}
+
+.main-content h2, .main-content h3 {
+	color: #f2f2f2;
+}
+
+.main-content img {
+	width: 400px;
+	height: 400px;
+	position: relative;
+	transition: 0.5s;
+}
+
+.main-content img:hover{
+	opacity: 0.3;
+}
+
+
+
+.img-hover {
+	background: rgba(0,0,0, 0.5);
+	width: 300px;
+	position:absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+.profile-wrapper {
+	height: 750px;
+	background: url("http://img12.deviantart.net/4145/i/2015/024/9/f/spooky_lake_by_abigbat-d8f8tej.jpg") no-repeat center center fixed;
+	background-size: cover;
+	
+}
+
+.profile-overlay{
+	height: 750px;
+}
+
+.profile-overlay .lead {
+	color: #bfbfbf;
+	
+}
+
+.profile-overlay h2{
+	margin-top: 20%;
+	color: #000033;
+	text-decoration: underline;
+}
+
+.profile-overlay img{
+	margin-top: 45%;
+	height: 300px;
+	width: 300px;
+}
+
+.profile-overlay img:hover{
+	-moz-box-shadow: 0 0 20px #999;
+	-webkit-box-shadow: 0 0 20px #999;
+	box-shadow: 0 0 20px #999;
+}
+
+.social-button {
+	display: inline-block;
+}
+
+
+
+
+.btn {
+ 
   color: #000;
   border: 2px outset rgba(0, 0, 0, 0.9);
   background: #C0C0C0;
@@ -127,6 +201,8 @@ hr.intro-divider {
   box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
   letter-spacing: 2px;
   transition: 0.2s;
+  
+  list-style: none;
 }
 
 .btn:hover {
@@ -140,237 +216,17 @@ hr.intro-divider {
   letter-spacing: 2px;
 }
 
-/*section 2*/
-.content-section-a {
-    padding: 50px 0;
-    background: url('https://41.media.tumblr.com/eb2382a5a4c996cfdab27bc0d1eb51ff/tumblr_nt5umxS1FY1ud7rr3o1_1280.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: 855px;
-}
-.bg-overlay2 {
-  margin-top: -50px;
-  background: rgba(255, 255, 255, 0.2);
-  height: 855px;
-}
-  /*self-taught*/
-.container .link {
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  font-size: 22px;
-}
-
-.container .link:hover {
-  color: rgb(0,0,128);
-  font-weight: bold;
-  font-size: 22.5px;
-}
-
-h2.section-heading {
-    margin-top: 100px;
-    font-size: 3em;
-    color: rgba(0, 0, 0, 0.9);
-}
-
-  /*text*/
- .content-section-a p {
-    font-size: 22px;
-   font-weight: bold;
-    color: #000;
-  }
-.content-section-a p a {
-  color: silver;
-  font-weight: bold;
-}
-/*profile picture*/
-.img-circle {
-  margin-top: 150px;
-  border: 1px outset rgba(255, 255, 255, 0.3);
-  box-shadow: 1px 1px 1px rgba(0,0,0,0.6);
-  
-}
-
-
-/* Portfolio section*/
-section {
-  color: black;
-  background: url('https://41.media.tumblr.com/92e61775d4c3edcc5145936e3703d125/tumblr_nt5uo9fH9y1ud7rr3o1_1280.jpg') no-repeat center center fixed;
-  background-size: cover;
-}
-
- #below-section {
-  color: #000;
-}
-
-#small-text {
-  color: white;
-}
-
-/*.portfolio-item {
-  overflow: hidden;
-  padding: 7px;
-  color: white;
-  height: 308px;
-}*/
-/*Portfolio items*/
-
-#portfolio .portfolio-item {
-  margin: 0 0 15px;
-  right: 0;
-  border: 1px outset rgba(255, 255, 255, 0.6);
-}
-
-#portfolio .portfolio-item:hover {
-  transition: 0.5s;
-  box-shadow: 5px 10px 5px rgba(0,0,0,0.9);
-}
-
-#portfolio .portfolio-item .portfolio-link {
-  display: block;
-  position: relative;
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
-  background: rgba(0, 0, 0, .7);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: all ease .5s;
-  -webkit-transition: all ease .5s;
-  -moz-transition: all ease .5s,
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
-  opacity: 1;
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
-  position: absolute;
-  width: 100%;
-  height: 20px;
-  font-size: 20px;
-  text-align: center;
-  top: 50%;
-  margin-top: -12px;
-  color: #fff;
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
-  margin-top: -12px;
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
-  margin: 0;
-}
-
-#portfolio .portfolio-item .portfolio-caption {
-  max-width: 400px;
-  margin: 0 auto;
-  background-color: rgba(0,0,0, 0.8);
-  text-align: center;
-  padding: 25px;
-}
-
-#portfolio .portfolio-item .portfolio-caption h4 {
-  color: #fff;
-  text-transform: none;
-  margin: 0;
-}
-
-#portfolio .portfolio-item .portfolio-caption p {
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style: italic;
-  font-size: 13px;
-  margin: 0;
-}
-
-#portfolio * {
-  z-index: 2;
-}
-
-@media (min-width:767px) {
-  #portfolio .portfolio-item {
-    margin: 0 0 30px;
-  }
-}
-
-/*.col-md-4 {
-  overflow: hidden;
-  display: inline-block;
-  border: 1px outset rgba(255, 255, 255, 0.6);
-  background: rgba(0, 0, 0, 0.6);
-  border-radius: 1%;
-  text-align: center;
-  box-shadow: 2px 3px 2px rgba(0,0,0,0.3);
-  text-shadow: 1px 2px 1px rgba(0,0,0,0.3);
-  cursor: pointer;
-}
-.col-md-4:hover {
-  transition: 0.5s;
-  box-shadow: 5px 10px 5px rgba(0,0,0,0.9);  
-}*/
-
-.section-heading-spacer {
-    float: left;
-    width: 200px;
-    border-top: 3px solid #e7e7e7;
-}
-
-.banner {
-    padding: 100px 0;
-    background: url('https://41.media.tumblr.com/ac46aa24b44b5036e9200abb71f810d9/tumblr_nt5vzxV6Us1ud7rr3o1_1280.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: 755px;
-}
-
-.bg-overlay4 {
-  margin-top: -100px;
-  padding: 100px 0;
-  background: rgba(255,255,255, 0.3);
-  height: 755px;
-}
-
-.banner ul {
-    margin-bottom: 0;
-}
-
-.banner-social-buttons {
-    float: right;
-    margin-top: 0;
-}
-
-@media(max-width:1199px) {
-    ul.banner-social-buttons {
-        float: left;
-        margin-top: 15px;
-    }
+.footer{
+	width:100%;
 }
 
 
 
-    ul.banner-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
 
-    ul.banner-social-buttons > li:last-child {
-        margin-bottom: 0;
-    }
 
-h2.connect {
-   margin: 0;
-   color: rgba(0, 0, 0, 0.9);
-}
 
-footer {
-    padding: 50px 0;
-    background: rgba(192, 192, 192, 0.9);
-}
 
-p.copyright {
-    margin: 15px 0 0;
-}
+
+
+
+
