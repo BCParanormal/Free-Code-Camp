@@ -1,0 +1,20 @@
+function rot13(str) { 
+var regWord = /([A-M])+/;
+var puncTest = /([\s!.?])+/;
+var newstr = "";
+
+ for(var i = 0; i<= str.length - 1;i++){
+   if(puncTest.test(str[i])) {newstr += str[i];}
+   else if(regWord.test(str[i])){newstr += String.fromCharCode(str.charCodeAt(i) + 13);}
+   else{newstr += String.fromCharCode(str.charCodeAt(i) - 13);}
+ }
+ 
+  return newstr;
+  
+   
+  
+ 
+}
+
+// Change the inputs below to test
+rot13("SERR PBQR PNZC");
